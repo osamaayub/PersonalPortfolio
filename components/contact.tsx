@@ -8,7 +8,7 @@ import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
 
-export default function Contact() {
+const Contact=()=> {
   const { ref } = useSectionInView("Contact");
 
   return (
@@ -33,8 +33,8 @@ export default function Contact() {
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
-        <a className="underline" href="mailto:example@gmail.com">
-          example@gmail.com
+        <a className="underline" href="mailto:osama.ayubwebdev@gmail.com">
+          osama.ayubwebdev@gmail.com
         </a>{" "}
         or through this form.
       </p>
@@ -50,6 +50,7 @@ export default function Contact() {
           }
 
           toast.success("Email sent successfully!");
+          return data;
         }}
       >
         <input
@@ -72,3 +73,4 @@ export default function Contact() {
     </motion.section>
   );
 }
+export default Contact;

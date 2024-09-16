@@ -7,7 +7,7 @@ import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
-export default function Header() {
+const Header=()=> {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
 
@@ -63,3 +63,4 @@ export default function Header() {
     </header>
   );
 }
+export default Header;
