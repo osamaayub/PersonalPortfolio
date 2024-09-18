@@ -31,7 +31,7 @@ const Intro=()=> {
             }}
           >
             <Image
-              src='/personal.jpg'
+              src='/personal.png'
               alt='osama portrait'
               width='192'
               height='192'
